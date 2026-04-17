@@ -1,10 +1,17 @@
-import { TouchableOpacity } from 'react-native';
-import { style } from './style';
+import { Text, TouchableOpacity } from "react-native";
+import { styles } from "./styles";
 
-export function ButtonInitConvert() {
-    return (
-        <TouchableOpacity>
-            <Text style={style.button}>Calcular</Text>
-        </TouchableOpacity>
-    );
+export function ButtonInitConvert({ variant = "primary", onPress }) {
+  return (
+    <TouchableOpacity onPress={onPress}>
+      <Text
+        style={[
+          styles.button,
+          variant === "primary" ? styles.buttonPrimary : styles.buttonSecondary
+        ]}
+      >
+        Calcular
+      </Text>
+    </TouchableOpacity>
+  );
 }
