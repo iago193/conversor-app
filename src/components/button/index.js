@@ -1,7 +1,7 @@
 import { Text, TouchableOpacity } from "react-native";
 import { styles } from "./styles";
 
-export function ButtonInitConvert({ variant = "primary", onPress }) {
+export function ButtonInitConvert({ variant = "primary", onPress, text }) {
   return (
     <TouchableOpacity onPress={onPress}>
       <Text
@@ -10,7 +10,7 @@ export function ButtonInitConvert({ variant = "primary", onPress }) {
           variant === "primary" ? styles.buttonPrimary : styles.buttonSecondary
         ]}
       >
-        Calcular
+        {text}
       </Text>
     </TouchableOpacity>
   );

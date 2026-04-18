@@ -9,6 +9,7 @@ import {
 } from "react-native";
 import { ButtonInitConvert } from "./src/components/button";
 import { styles } from "./app.styles";
+import { currencies } from "./src/constants/currencies";
 
 export default function App() {
   return (
@@ -17,15 +18,25 @@ export default function App() {
       style={styles.container}
     >
       <ScrollView style={styles.scrollView}>
-        <View>
-          <StatusBar style="auto" />
-          <View>
-            <Text>Conversor de Moedas</Text>
-            <Text>Converta valores entre diferentes moedas</Text>
+        <View style={styles.content}>
+          <StatusBar style="light" />
+          <View style={styles.header}>
+            <Text style={styles.title}>Conversor de Moedas</Text>
+            <Text style={styles.subTitle}>
+              Converta valores entre diferentes moedas
+            </Text>
           </View>
-          <View>
-            <Text>De:</Text>
-            <ButtonInitConvert variant="secondary" />
+          <View style={styles.card}>
+            <Text style={styles.label}>De:</Text>
+            <View style={styles.currencyGrid}>
+              {currencies.map((value, index) => (
+                <ButtonInitConvert
+                  key={index}
+                  variant="primary"
+                  text={value.code}
+                />
+              ))}
+            </View>
           </View>
         </View>
       </ScrollView>
