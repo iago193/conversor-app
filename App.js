@@ -10,6 +10,7 @@ import {
 import { ButtonInitConvert } from "./src/components/button";
 import { styles } from "./app.styles";
 import { currencies } from "./src/constants/currencies";
+import { Input } from "./src/components/input";
 
 export default function App() {
   return (
@@ -37,6 +38,7 @@ export default function App() {
                 />
               ))}
             </View>
+            <Input value={''} onChangeText={''} label={''} />
           </View>
         </View>
       </ScrollView>
