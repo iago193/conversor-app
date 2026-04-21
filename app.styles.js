@@ -2,57 +2,72 @@ import { StyleSheet } from "react-native";
 import { colors } from "./src/styles/colors";
 
 export const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: colors.background,
-    },
+  container: {
+    flex: 1,
+    backgroundColor: colors.background,
+  },
 
-    scrollView: {
-        flexGrow: 1,
-    },
+  scrollView: {
+    flexGrow: 1,
+  },
 
-    content: {
-        flex: 1,
-        paddingHorizontal: 24,
-        paddingTop: 80,
-        paddingBottom: 24,
-    },
+  content: {
+    flex: 1,
+    paddingHorizontal: 24,
+    paddingTop: 80,
+    paddingBottom: 24,
+  },
 
-    header: {
-        marginBottom: 32,
-    },
+  header: {
+    marginBottom: 32,
+  },
 
-    title: {
-        fontWeight: 'bold',
-        fontSize: 32,
-        color: colors.text,
-        marginBottom: 8,
-    },
+  title: {
+    fontWeight: "bold",
+    fontSize: 32,
+    color: colors.text,
+    marginBottom: 8,
+  },
 
-    subTitle: {
-        color: colors.textSecondary,
-        fontSize: 16,
-    },
-    
-    card: {
-        backgroundColor: colors.cardBackground,
-        borderRadius: 16,
-        padding: 24,
-        marginBottom: 24,
-    },
+  subTitle: {
+    color: colors.textSecondary,
+    fontSize: 16,
+  },
 
-    label: {
-        color: colors.textSecondary,
-        marginBottom: 8,
-        fontSize: 14,
-    },
+  card: {
+    backgroundColor: colors.cardBackground,
+    borderRadius: 16,
+    padding: 24,
+    marginBottom: 24,
+  },
 
-    currencyGrid: {
-        flexDirection: 'row',
-        flexWrap: 'wrap',
-        marginHorizontal: -4,
-        marginBottom: 16,
-        alignItems: 'center',
-        justifyContent: 'center',
-    }
-})
+  label: {
+    color: colors.textSecondary,
+    marginBottom: 8,
+    fontSize: 14,
+  },
+
+  currencyGrid: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    marginHorizontal: -4,
+    marginBottom: 16,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+
+  swapHorizontalButton: {
+    backgroundColor: colors.primary,
+    paddingVertical: 16,
+    paddingHorizontal: 24,
+    borderRadius: 8,
+    marginBottom: 24,
+  },
+
+  swapHorizontalText: {
+    textAlign: "center",
+    color: colors.text,
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
+});
